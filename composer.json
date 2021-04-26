@@ -1,0 +1,19 @@
+{
+    "name": "cicnavi/dei-2021-oidc-php-demo",
+    "description": "DEI 2021 OIDC PHP Demo",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marko Ivančić",
+            "email": "marko.ivancic@srce.hr"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-gmp": "*",
+        "cicnavi/oidc-client-php": "^1.0"
+    }
+}

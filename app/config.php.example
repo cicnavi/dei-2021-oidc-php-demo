@@ -1,0 +1,17 @@
+<?php
+
+use Cicnavi\Oidc\Config;
+
+return [
+    // Production environment
+    //Config::CONFIG_KEY_OIDC_CONFIGURATION_URL => 'https://login.aaiedu.hr/.well-known/openid-configuration',
+    // Test environment
+    Config::CONFIG_KEY_OIDC_CONFIGURATION_URL => 'https://fed-lab.aaiedu.hr/.well-known/openid-configuration',
+    Config::CONFIG_KEY_OIDC_CLIENT_ID => 'some-client-id',
+    Config::CONFIG_KEY_OIDC_CLIENT_SECRET => 'some-client-secret',
+    Config::CONFIG_KEY_OIDC_REDIRECT_URI => 'http://localhost:8000/callback.php',
+    Config::CONFIG_KEY_OIDC_SCOPE => 'openid profile hrEduPersonUniqueID',
+    Config::CONFIG_KEY_OIDC_ID_TOKEN_VALIDATION_EXP_LEEWAY => 60,
+    Config::CONFIG_KEY_OIDC_ID_TOKEN_VALIDATION_IAT_LEEWAY => 60,
+    Config::CONFIG_KEY_OIDC_ID_TOKEN_VALIDATION_NBF_LEEWAY => 60,
+];
